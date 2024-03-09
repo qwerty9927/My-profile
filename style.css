@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: justify;
+  font-size: calc(10px + 0.390625vw);
 }
 
 header {
@@ -14,7 +15,11 @@ header {
 h1,
 h2 {
   margin: 0;
-  padding: 5px 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: calc(2 * 12px + 0.390625vw);
 }
 
 nav {
@@ -53,32 +58,39 @@ section ul li {
 }
 
 #container {
-  width: 1000px;
-  position: absolute;
+  width: 75%;
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+  height: 500px;
 }
 
 #left-side {
+  width: 30%;
+  margin-right: 1%;
+}
+
+#left-side-content {
   background-color: #f5ece6;
-  padding: 30px;
-  position: fixed;
   height: 100%;
+  width: 22.5%;
+  position: fixed;
+  left: 12.5%;
 }
 
 #avatar {
-  width: 300px;
+  width: 80%;
   border-radius: 50%;
+  margin: 10%;
 }
 
 #right-side {
-  width: 630px;
-  position: absolute;
-  right: 0;
+  width: 70%;
 }
 
 #nav {
   position: fixed;
-  width: 630px;
+  width: 52%;
 }
 
 #nav::before {
@@ -93,13 +105,4 @@ section ul li {
 
 #wrapper {
   padding: 20px 0 40px;
-  /* margin-top: 100px; */
 }
-
-/* footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
-  width: 100%;
-} */
